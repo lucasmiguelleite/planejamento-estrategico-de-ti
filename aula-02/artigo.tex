@@ -1,0 +1,107 @@
+\documentclass[12pt,a4paper,oneside]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+\usepackage{indentfirst}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{abntex2cite}
+
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0.3cm}
+
+\begin{document}
+
+\begin{center}
+  \textbf{\large ESCOLA E FACULDADE DE TECNOLOGIA SENAI GASPAR RICARDO JÚNIOR}\\
+  \textbf{Desenvolvimento de Sistemas}\\[1cm]
+  \textbf{\Large Lucas Miguel Leite}\\[0.5cm]
+  \textbf{Professor: Deivison Takatu}\\[2cm]
+  \textbf{\LARGE\textbf{Análise Organizacional e Estratégica de TI: Estudo de Caso Amazon.com, Inc.}}\\[1cm]
+  Sorocaba -- 18/02/2026
+\end{center}
+
+\vspace{1cm}
+
+\begin{center}
+  \textbf{RESUMO}
+\end{center}
+
+Este artigo apresenta uma análise organizacional e estratégica da Amazon.com, Inc., com foco no papel da Tecnologia da Informação como viabilizadora de negócios e fonte de inovação. O estudo abrange a descrição organizacional (segmentos, porte e mercado), a identidade estratégica (missão, visão e Princípios de Liderança) e o alinhamento estratégico de TI, detalhando como decisões tecnológicas como sistemas de armazém robotizado (Amazon Robotics), computação em nuvem (AWS), Big Data para personalização, logística preditiva e ecossistema de dispositivos (Alexa/Echo) suportam diretamente os objetivos de negócio. Conclui-se que a Amazon exemplifica o estágio máximo de maturidade em TI, onde estratégia de negócio e estratégia de TI são indistinguíveis.
+
+\vspace{0.5cm}
+\textbf{Palavras-chave:} Planejamento Estratégico de TI. Amazon. AWS. Big Data. Inovação.
+
+\newpage
+
+\section{Introdução}
+
+A Amazon.com, Inc. é uma empresa de tecnologia diversificada, classificada como Big Tech, com valor de mercado na casa dos trilhões de dólares e mais de 1,5 milhão de funcionários globalmente. Seus principais pilares são o E-commerce (varejo online), a Computação em Nuvem (Amazon Web Services -- AWS), o Streaming Digital e a Inteligência Artificial. Opera em escala global, com presença dominante na América do Norte, Europa e expansão contínua em mercados emergentes como Brasil e Índia \cite{amazon2026}.
+
+\section{Identidade Estratégica}
+
+\subsection{Missão}
+
+A missão da Amazon foca na centralidade do cliente: ``Ser a empresa mais centrada no cliente da Terra, onde os clientes podem encontrar e descobrir qualquer coisa que desejem comprar online e nos esforçamos para oferecer aos nossos clientes os preços mais baixos possíveis.''
+
+\subsection{Visão}
+
+A visão estratégica evoluiu para: ``Tornar-se o Melhor Empregador da Terra e o Lugar Mais Seguro da Terra para Trabalhar.''
+
+\subsection{Princípios de Liderança (Valores)}
+
+A Amazon utiliza Princípios de Liderança como bússola para a tomada de decisão. Os principais incluem: Obsessão pelo Cliente (começar com o cliente e trabalhar de trás para frente), Propriedade (pensar a longo prazo sem sacrificar valor por resultados de curto prazo), Inventar e Simplificar (exigir inovação e encontrar maneiras de simplificar), Aprender e Ser Curioso (busca contínua por melhoria) e Ter a Espinha Dorsal (discordar e comprometer-se) \cite{kluyver2007}.
+
+\section{Alinhamento Estratégico de TI}
+
+A TI na Amazon não é um departamento de suporte isolado; está intrinsecamente ligada à missão de centralidade no cliente. A estratégia de TI foca em três pilares derivados da estratégia de negócio: Baixo Custo, Vasta Seleção e Conveniência \cite{porter1989}.
+
+\subsection{Decisões de TI e Processos Internos}
+
+\textbf{Sistemas de Gestão de Armazém (WMS) e Robótica:} A implementação massiva de robôs Kiva (Amazon Robotics) e algoritmos de otimização de rotas reduziu drasticamente o tempo de ``click-to-ship'' e os custos operacionais, permitindo preços mais baixos e entregas em 1 dia (Amazon Prime).
+
+\textbf{Computação em Nuvem (AWS):} O uso da própria infraestrutura AWS para escalar operações em picos de demanda (Black Friday, Prime Day) garante disponibilidade e confiabilidade da plataforma.
+
+\subsection{Competitividade e Diferenciação}
+
+\textbf{Big Data e Personalização:} Algoritmos de Machine Learning para recomendação de produtos aumentam o ticket médio e melhoram a experiência de descoberta do usuário.
+
+\textbf{Logística Preditiva (Anticipatory Shipping):} Análise de dados para prever compras por região antes do pedido, movendo estoques antecipadamente, reduzindo o tempo de entrega a níveis que concorrentes sem essa inteligência não alcançam.
+
+\subsection{Inovação Organizacional}
+
+\textbf{Ecossistema de Dispositivos (Alexa/Echo/Kindle):} Hardware e IA de voz integrados à plataforma criam novos canais de venda e mantêm o cliente no ecossistema.
+
+\textbf{Marketplace e API:} Plataformas abertas permitem que terceiros vendam no site, expandindo a seleção sem necessidade de compra de estoque.
+
+A Tabela~\ref{tab:alinhamento} resume o alinhamento estratégico.
+
+\begin{table}[htb]
+  \centering
+  \caption{Alinhamento entre objetivos de negócio e soluções de TI da Amazon.}
+  \label{tab:alinhamento}
+  \begin{tabular}{p{3.5cm}p{5cm}p{4.5cm}}
+    \toprule
+    \textbf{Objetivo de Negócio} & \textbf{Solução de TI Estratégica} & \textbf{Resultado Esperado} \\
+    \midrule
+    Centralidade no Cliente & Algoritmos de Personalização e IA & Experiência única e fidelização \\
+    Excelência Operacional & Automação Robótica e Cadeia de Suprimentos Inteligente & Redução de custos e agilidade \\
+    Inovação Contínua & Plataforma AWS e Computação em Nuvem & Lançamento global em minutos \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Conclusão}
+
+A Amazon exemplifica o estágio máximo de maturidade em TI, onde Estratégia de Negócio e Estratégia de TI são indistinguíveis. Cada decisão tecnológica --- da robótica nos armazéns à personalização algorítmica, da nuvem ao ecossistema de dispositivos --- está diretamente conectada aos objetivos de centralidade no cliente, excelência operacional e inovação contínua. A TI não é apenas suporte, mas sim viabilizadora de negócios e fonte de vantagem competitiva sustentável \cite{rocha2018}.
+
+\bibliographystyle{plain}
+\bibliography{referencias}
+
+\end{document}
